@@ -1,0 +1,10 @@
+FROM python:3.8
+
+# Copy your project files to the container
+COPY . /app
+
+# Set the working directory
+WORKDIR /app
+
+# Define the command to run when the container starts
+CMD ["python", "ASL_recongition_notebook.ipynb"]
